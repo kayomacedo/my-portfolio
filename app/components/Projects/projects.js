@@ -12,8 +12,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export default function Projects() {
     const [slidePerview,setSlidePerview] = useState(2);
     const data = [
-        { id: '1', Image: './project1.gif' },
-        { id: '1', Image: './project1.gif' }
+        { id: '1', img: '/project1.gif',url:'https://github.com/kayomacedo/gerenciador-de-contas-app' },
+        { id: '2', img: '/project1.gif', url:'https://github.com/kayomacedo/gerenciador-de-contas-app' }
      
        
 
@@ -59,13 +59,20 @@ export default function Projects() {
                             <>
                             
                             <SwiperSlide key={item.id} className="content">
-                                <img
-                                src={item.Image}
-                                alt={'slider'}
+
+                            <Image 
                                 className="slider-item"
-                                
-                                />
-                                <a target="_blank" href="https://github.com/kayomacedo/gerenciador-de-contas-app"  className="link"> On  
+                                src={item.img}
+                                alt="Logo"
+
+                                width={150}
+                                height={150}
+                              
+                                priority
+                            />
+                       
+                              
+                                <a target="_blank" href={item.url}  className="link"> On  
                                 <VscGithubAlt fontSize={25} className="git"/>
                                 </a>
 
