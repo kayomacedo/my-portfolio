@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import "./header.scss";
-import { Typewriter,Cursor, useTypewriter } from 'react-simple-typewriter'
+import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 export default function Header() {
   const [text] = useTypewriter({
