@@ -1,0 +1,139 @@
+.python {
+
+
+    .progress {
+        height: 15px;
+        background-color: #777;
+        position: relative;
+
+        width: 300px;
+        border-radius: 15px;
+    }
+
+
+
+    .progress .progress-bar {
+        position: absolute;
+        height: 100%;
+        background-color: #9ACD32;
+        animation: python 6s forwards;
+        border-radius: 15px;
+    }
+
+
+    @keyframes python {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 80%
+        }
+
+    }
+
+}
+
+
+.react {
+
+
+    .progress {
+        height: 15px;
+        background-color: #777;
+        position: relative;
+
+        width: 300px;
+        border-radius: 15px;
+    }
+
+
+
+    .progress .progress-bar {
+        position: absolute;
+        height: 100%;
+        background-color: #9ACD32;
+        animation: react 6s forwards;
+        border-radius: 15px;
+    }
+
+
+    @keyframes react {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 50%
+        }
+
+    }
+
+}
+.javaScript{
+    .progress {
+        height: 15px;
+        background-color: #777;
+        position: relative;
+
+        width: 300px;
+        border-radius: 15px;
+    }
+
+
+
+    .progress .progress-bar {
+        position: absolute;
+        height: 100%;
+        background-color: #9ACD32;
+        animation: javaScript 6s forwards;
+        border-radius: 15px;
+    }
+
+
+    @keyframes javaScript {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 60%
+        }
+
+    }
+    
+}
+
+.reactNative{
+    .progress {
+        height: 15px;
+        background-color: #777;
+        position: relative;
+
+        width: 300px;
+        border-radius: 15px;
+    }
+
+
+
+    .progress .progress-bar {
+        position: absolute;
+        height: 100%;
+        background-color: #9ACD32;
+        animation: reactNative 6s forwards;
+        border-radius: 15px;
+    }
+
+
+    @keyframes reactNative {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 70%
+        }
+
+    }
+    
+}
