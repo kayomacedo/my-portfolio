@@ -18,7 +18,7 @@ export default function Experience() {
         text={'Experience'}
       />
 
-      <p>3 years  working  as a  software Developer</p>
+      <p className="text">Two years of experience in Python backend and one year in mobile development with React Native. Successfully completed various personal and academic projects, showcasing practical skills.</p>
 
       <div className='experience-times'>
         <div className="bar-icon">

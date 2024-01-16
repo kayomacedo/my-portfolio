@@ -43,10 +43,10 @@ export default function Info() {
             <SectionTitle
                 text={'Education'}
             />
-                <p>information systems bachelors degree 
-
-                    <br></br> - Estácio Cabo Frio
-                </p>
+                <p>
+    Information Systems Bachelor's Degree
+    <br></br> - Estácio Cabo Frio (7th semester)
+</p>
                 
 
             </div>

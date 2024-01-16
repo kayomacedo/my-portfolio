@@ -6,27 +6,29 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 export default function Header() {
   const [text] = useTypewriter({
-    words:['Software Engeneer','Developer Mobile','Backend Developer','Full Stack'],
-    loop:{},
-    typeSpeed:150
-    
-    
+    words: ['Software Engeneer', 'Developer Mobile', 'Backend Developer', 'Full Stack'],
+    loop: {},
+    typeSpeed: 150
+
+
   })
   return (
     <div className="header">
+      <div className="box-header">
+        
 
-      <div>
+      <div className="titlesHeader">
         <h1>Hi, i'm Kayo 👋</h1>
         <h2>
 
-              {text}
-      
-      <Cursor
-    cursorColor='white'
-    />
+          {text}
+
+          <Cursor
+            cursorColor='white'
+          />
         </h2>
       </div>
-      <Image 
+      <Image
         className="header-img"
         src="/perfil.jpg"
         alt="Logo"
@@ -35,6 +37,7 @@ export default function Header() {
         height={150}
         priority
       />
+      </div>
 
 
     </div>
