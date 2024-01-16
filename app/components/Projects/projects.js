@@ -2,9 +2,10 @@
 import Image from "next/image";
 import SectionTitle from "../sectionTitle/section-title";
 import './projects.scss';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { useState,useEffect } from "react";
+import { Navigation, Pagination, Autoplay,EffectCube } from 'swiper/modules';
+import { useState,useEffect,useRef } from "react";
 import { VscGithubAlt } from "react-icons/vsc";
+
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -33,57 +34,43 @@ export default function Projects() {
     },[]);
     return (
         <div className="projects">
+            <div className="title">
+                
             <SectionTitle
                 text={'Projects'}
+               
             />
+            
+            </div>
             <div className="gallery">
-                <Swiper
-                
-                slidesPerView={slidePerview}
-                 spaceBetween={30}
-                
-                 autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                  }}
-                 
-                 loop={true}
-                 pagination={{
-                   clickable: true,
-                 }}
-                 navigation={true}
-                 modules={[ Navigation, Autoplay]}
-                >
-                    {
-                        data.map((item) => (
-                            <>
-                            
-                            <SwiperSlide key={item.id} className="content">
-
-                            <Image 
-                                className="slider-item"
-                                src={item.img}
-                                alt="Logo"
-
-                                width={150}
-                                height={150}
-                              
-                                priority
-                            />
-                       
-                              
-                                <a target="_blank" href={item.url}  className="link"> On  
-                                <VscGithubAlt fontSize={25} className="git"/>
-                                </a>
-
-
-                            </SwiperSlide>
-                           
-                            </>
-
-                        ))
-                    }
-                </Swiper>
+            <Swiper
+        effect={'cube'}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        }}
+        pagination={true}
+        modules={[EffectCube, Pagination]}
+        className="mySwiper sliderItem"
+      >
+        <SwiperSlide>
+          <Image src={'/appGerenciador.png'} height={300} width={300} />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image src={'/appGerenciador2.png'} height={300} width={300} />
+        
+        </SwiperSlide>
+        <SwiperSlide>
+          
+          <Image src={'/appLight.png'} height={300} width={300} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={'/appLight2.png'} height={300} width={300} />
+        </SwiperSlide>
+      </Swiper>
 
 
             </div>
