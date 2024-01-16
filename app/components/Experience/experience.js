@@ -14,9 +14,13 @@ import './experience.scss'
 export default function Experience() {
   return (
     <div className="experience">
+      <div className="title">
+
+
       <SectionTitle
         text={'Experience'}
       />
+      </div>
 
       <p className="text">Two years of experience in Python backend and one year in mobile development with React Native. Successfully completed various personal and academic projects, showcasing practical skills.</p>
 
