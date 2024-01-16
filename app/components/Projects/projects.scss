@@ -52,10 +52,22 @@
             color: var(--text-primary);
             text-decoration: none;
         }
+       
 
 
 
 
 
+    }
+    @media(min-width: 768px){
+        margin-left: -150%;
+        margin-top: 25%;
+        .title{
+    
+         margin: 0;
+         margin-right: 5%;
+        }
+      
+     
     }
 }

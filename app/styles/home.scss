@@ -23,8 +23,10 @@
         grid-template-rows: 10% 15%;
         grid-template-columns: 60% 30% ;
         grid-template-areas: 
-        "header info"
-        "experience empty"
+        "header empt2 info"
+        "menuSocial empt1 empt23"
+        'experience projects aaa'
+       
        
    
         
@@ -32,9 +34,11 @@
         align-items: center;
         justify-items: start;
         justify-content: space-between;
+        height: 45vw;
 
 
 
     }
+   
     
 }
