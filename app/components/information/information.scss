@@ -1,10 +1,11 @@
 .information{
-    margin-top: 10%;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
     grid-area: info;
+    margin-bottom: 50px;
     
     p{
         color: var(--text-secondary);
@@ -36,11 +37,19 @@
         color:var(--text-secondary)
     }
 
-    @media(min-width: 768px){
-       display: flex;
-       margin-left: -60%;
-       margin-top: 185%;
-      
+    @media(min-width: 1000px){
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        grid-area: info;
+
+        .title{
+       
+            width: 320px;
+        }
+        
      
     }
 }

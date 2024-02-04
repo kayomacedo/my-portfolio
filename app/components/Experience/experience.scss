@@ -8,14 +8,23 @@
     margin-right: 6%;
     .title{
         
-        margin-left: 3%;
+        width: 100%;
+        padding-left: 10px;
+       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
     }
     .text{
         font-size: 15px;
      
         text-align: justify;
-        width: 85%;
-        margin-left: -6%;
+        width: 100%;
+        max-width: 350px;
+        
+
+     
     }
     .experience-times {
    
@@ -67,9 +76,29 @@
 
 
     }
+    p {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 28px;
+        color: var(--text-secondary);
+        text-align: center;
+        margin-top: -20px;
+        padding-inline: 20px;
+
+    }
 
 
 
+
+    @media(min-width: 1000px) {
+        align-items: flex-start;
+        
+        width: 100%;
+        .title{
+            margin-left: -10px;
+            
+        }
+        
     p {
         font-weight: 300;
         font-size: 15px;
@@ -78,34 +107,34 @@
         text-align: center;
         margin-top: -20px;
 
-    }
-
-    @media(min-width: 768px) {
-        align-items: flex-start;
-        margin-top: -2%;
-        width: 100%;
-      
-        padding-left: 30%;
-        gap: 24px;
-        .title{
-            margin-left: -7%;
-        }
-    
-        .experience-times{
-            background-color: aqua;
-            margin-left: -7%;
-        }
-    
+     
         
 
-        p {
-
-            font-size: 24px;
-            line-height: 36px;
-            text-align: start;
+    }
+    .text{
+        font-size: 15px;
+     
+        text-align: justify;
+        width: 100%;
+        max-width: 650px;
        
+     
+    }
+      
+    .title{
+        
+        width: 100%;
+        padding-left: 28px;
+       
+        justify-content: center;
+        align-items: center;
+        text-align: start;
 
-        }
+    }
+    .experience-times{
+        margin-top: 50px;
+    }
+     
       
     }
 }

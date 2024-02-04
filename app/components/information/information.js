@@ -5,9 +5,12 @@ import Image from "next/image";
 export default function Info() {
     return (
         <div className='information'>
+            <div className="title">
             <SectionTitle
                 text={'Languages'}
             />
+
+            </div>
             <div className='languages-info'>
                 <div className="boxIconLanguage">
 
@@ -40,9 +43,13 @@ export default function Info() {
 
            
             <div className='education-info'>
+            <div className="title"> 
+            
+            
             <SectionTitle
                 text={'Education'}
             />
+            </div>
                 <p>
     Information Systems Bachelor's Degree
     <br></br> - Estácio Cabo Frio (7th semester)

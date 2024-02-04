@@ -35,12 +35,9 @@ export default function Projects() {
   return (
     <div className="projects">
       <div className="title">
-
         <SectionTitle
           text={'Projects'}
-
         />
-
       </div>
       <div className="gallery">
         <Swiper
@@ -53,7 +50,8 @@ export default function Projects() {
             shadowScale: 0.94,
           }}
           pagination={true}
-          modules={[EffectCube, Pagination]}
+          autoplay={{ delay: 5000 }}
+          modules={[EffectCube, Pagination, Autoplay]}
           className="mySwiper sliderItem"
         >
           <SwiperSlide>
@@ -73,7 +71,7 @@ export default function Projects() {
         </Swiper>
         <div className="button">
 
-        <a href="https://github.com/kayomacedo/gerenciador-de-contas-app" target="_blank" className="textButon">On Github</a>
+          <a href="https://github.com/kayomacedo/gerenciador-de-contas-app" target="_blank" className="textButon">On Github</a>
         </div>
 
 

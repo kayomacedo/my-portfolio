@@ -15,23 +15,42 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-cube';
 
-export default function Home() {
+export default function Home() { 
   return (
     <main className='container'>
 
-      <Header />
-      <Experience />
-      <Info/>
-      <MenuSocial/>
-      <ContactMe />
-      <Projects/>
 
-  
+
+      <Header />
+      <MenuSocial />
+      <div className='blocoTop'>
+        <div className='inicio'>
+        <Experience />
+          
+
+        </div>
+        <div className='meio'>
+        <Projects/>
+
+        </div>
+        <div className='final'>
+        <Info/>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
       <div className='buttons'>
         <div className='social'>
 
         </div>
-       
+
 
       </div>
 

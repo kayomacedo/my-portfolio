@@ -5,6 +5,7 @@
     grid-area: menuSocial;
     justify-content: center;
     font-size: 35px;
+    margin-top: 15px;
     
     .icon{
         color: var(--text-secondary);
@@ -17,9 +18,16 @@
         border: 0;
     }
 
-    @media(min-width: 768px) {
-        margin-top: 20%;
-        margin-left: 65%;
+    @media(min-width: 1000px) {
+        margin-top: -50px;
+        left: 360px;
+ 
+        position: absolute;
+        .icon:hover{
+            color: #9ACD32;
+            border: 0;
+        }
+  
       
        
         
